@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>RestArt</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Ресторан європейської кухні</h1>
+            <h2>RestArt</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#reservation">Бронювання</a></li>
+                    <li><a href="#careers">Вакансії</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>Про нас</h2>
+                <p>Ласкаво просимо до ресторану "RestArt" — найкраще місце для сімейного відпочинку і смачної їжі.</p>
+                <p>Ми пропонуємо різноманітне меню зі стравами української та європейської кухні.</p>
+            </section>
+            <section id="gallery" class="gallery">
+                <h2>Галерея</h2>
+                <div class="gallery-container">
+                    <img src="https://embed.virtual.ua/panorams/restoran/lviv/baczewski/baczewski_03/mobile_f.jpg" alt="інтерєр ресторану">
+                    <img src="https://donttakefake.com/wp-content/uploads/2021/11/Avangarden-dtf-magazine22-1.jpg" alt="столики">
+                    <img src="https://mercurekyiv.ua/images/Restaurants/terrace1_50.jpg" alt="тераса">
+                    <img src="https://cdn.village.com.ua/the-village.com.ua/post_image-image/_Bx_letA0Qy9QJSeSTx2sw-original_opt.webp" alt="вид з вікна">
+                    <img src="https://img.birthday-place.ru/mCHA7Ylbd-xMoAPlFSDUPNWLf2fZJ-3uRtk3PxjamWXoEfsqhsJB2c-FfdqfzSXOw58OHGUhg7yDkPX-qwgLz2s8I89AIeOiGNqUiw=w800-h600-l100" alt="ресторан столики">
+                </div>
+            </section> 
+            <section id="reservation">
+                <h2>Забронювати столик</h2>
+                <form>
+                  <label for="name">Ім'я:</label>
+                  <input type="text" id="name" name="name" required />
+          
+                  <label for="phone">Телефон:</label>
+                  <input type="tel" id="phone" name="phone" required />
+          
+                  <label for="date">Дата:</label>
+                  <input type="date" id="date" name="date" required />
+
+                  <label for="time">Час:</label>
+                  <input type="time" id="time" name="time" required />
+
+                  <label for="guests">Кількість гостей:</label>
+                  <input type="number" id="guests" name="guests" min="1" max="20" required />
+
+                  <button type="submit">Підтвердити бронювання</button>
+                </form>
+            </section>
+            <section id="careers">
+                <h2>Вакансії</h2>
+                <p>Хочеш стати частиною нашої команди? Надішли нам своє резюме!</p>
+                <form>
+                  <label for="applicant-name">Ім'я:</label>
+                  <input type="text" id="applicant-name" name="applicant-name" required />
+          
+                  <label for="email">Електронна пошта:</label>
+                  <input type="email" id="email" name="email" required />
+          
+                  <label for="resume">Резюме (посилання або текст):</label>
+                  <textarea id="resume" name="resume" rows="4" required></textarea>
+          
+                  <button type="submit">Надіслати заявку</button>
+                </form>
+            </section>
+        </main>
+        <footer id="contacts" class="contact-form">
+            <h2>Контакти</h2>
+            <p>Адреса: вул. Галицька, 10, Львів</p>
+            <p>Телефон: <a href="tel:+380966667788">+38 (096) 666 77 88</a></p>
+            <p>Email: <a href="mailto:info@restart.com">info@restart.com</a></p>
+            <p>Пн-Нд: 10:00 - 23:00</p>
+        </footer>
+    </body>
+</html>
